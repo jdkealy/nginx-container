@@ -1,4 +1,5 @@
 #!/bin/bash
+env
 printenv
 echo  $API_PORT_3000_TCP_ADDR
 sed -i 's/APP_IP/'"$API_PORT_3001_TCP_ADDR"'/g' /etc/nginx/sites-enabled/api.myapp.com
